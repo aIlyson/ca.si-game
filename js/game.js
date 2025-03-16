@@ -36,7 +36,7 @@ const planeImage = new Image();
 planeImage.src = "/images/spaceship.png";
 
 const bulletImage = new Image();
-bulletImage.src = "/images/bullet.png";
+bulletImage.src = "/images/bullet-space.png";
 
 const asteroidImage = new Image();
 asteroidImage.src = "/images/asteroid.png";
@@ -45,7 +45,7 @@ let player = {
 	x: canvas.width / 2,
 	y: canvas.height - 60,
 	width: 60,
-	height: 60,
+	height: 60, 	
 	speed: 6,
 	dx: 0,
 	dy: 0,
