@@ -1,0 +1,12 @@
+# ignore IDE configuration files
+.idea/
+.vscode/
+
+# ignore log files
+*.log
+
+# ignore test folder
+test/
+
+# ignore backup editor files
+*~

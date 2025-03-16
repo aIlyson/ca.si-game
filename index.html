@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CASI - Game Demo | Allyson</title>
+    <link rel="icon" href="https://i.ibb.co/F2Py7Nm/logo-casi.png" />
+
+    <style>
+        :root {
+            --primary-color: #090811;
+            --secondary-color: #f2c00a;
+            --white-color: #fff;
+        }
+
+        @font-face {
+            font-family: "VT323";
+            src: url("/fonts/VT323/VT323-Regular.ttf") format("truetype");
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        * {
+            user-select: none;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body,
+        html {
+            color: var(--white-color);
+            background: #06060e;
+            height: 100%;
+            overflow: hidden;
+        }
+
+        h1,
+        h3 {
+            font-family: "VT323", monospace;
+            font-size: 1.5rem;
+        }
+
+        h2 {
+            font-family: "VT323", monospace;
+            font-size: 2.5rem;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            text-align: center;
+            margin-bottom: 40px;
+            text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .container {
+            position: absolute;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            top: 40%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            z-index: 10;
+        }
+
+        .logo {
+            width: 80px;
+        }
+
+        .title-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            z-index: 10;
+        }
+
+        .error-code {
+            font-size: 10rem;
+            opacity: 0.8;
+            text-shadow: 0 0 5px rgba(255, 255, 255, 0.8);
+        }
+
+        .error-message {
+            font-size: 2rem;
+            opacity: 0.9;
+            text-shadow: 0 0 5px rgba(255, 255, 255, 0.8);
+        }
+
+        .author a svg {
+            transition: all 0.3s ease;
+        }
+
+        .author a:hover svg {
+            transform: scale(1.1);
+            opacity: 0.9;
+            text-shadow: 0 0 5px rgba(255, 255, 255, 0.8);
+        }
+
+        #gameCanvas {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 1;
+        }
+
+        @media (max-width: 768px) {
+            body {
+                background: url('/images/space-background.gif') no-repeat center center fixed;
+                background-size: cover;
+            }
+
+            #gameCanvas {
+                display: none;
+            }
+
+            .container {
+                top: 50%;
+            }
+
+            .logo {
+                width: 110px;
+            }
+
+            .error-code {
+                font-size: 7rem;
+            }
+
+            .error-message {
+                font-size: 1.5rem;
+            }
+
+            .back-to-base {
+                font-size: 1rem;
+                padding: 8px 8px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <canvas id="gameCanvas"></canvas>
+
+    <div class="container">
+        <img src="https://i.ibb.co/F2Py7Nm/logo-casi.png" alt="logo-casi" class="logo" border="0" title="Logo CASI"
+            loading="lazy">
+        <div class="title-container">
+            <h1 class="error-code">404</h1>
+            <h2 class="error-message">Ops... você se perdeu no espaço!</h2>
+        </div>
+
+        <p class="author">
+            <a href="https://github.com/aIlyson" target="_blank">
+                <svg xmlns="http://www.w3.org/2000/svg" width="46" height="46" fill="white" class="bi bi-github"
+                    viewBox="0 0 16 16">
+                    <path
+                        d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8" />
+                </svg>
+            </a>
+        </p>
+
+    </div>
+
+    <script src="./js/game.js"></script>
+</body>
+
+</html>
