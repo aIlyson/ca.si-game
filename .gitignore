@@ -10,3 +10,7 @@ test/
 
 # ignore backup editor files
 *~
+
+# ignore Vercel configuration files
+.vercel/
+vercel.json
