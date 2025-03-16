@@ -16,7 +16,7 @@ O código está incompleto neste repositório, pois é apenas uma demonstração
 ## Imagem da Tela
 
  <a href="https://casi-game.vercel.app/" align="center">
-    <img src="/images/screencapture-readme.png" width="900" height="300">
+    <img src="/images/screencapture-readme.png" width="900" height="400">
   </a>
 
 ## Uso
