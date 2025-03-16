@@ -1,6 +1,6 @@
 # CASI - Game Demo
 
-Essa é uma demo do jogo onde o jogador pode controlar uma nave e atirar projéteis em asteroides.
+Essa é uma demo do jogo que tem no website do CASI, onde o jogador pode controlar uma nave e atirar projéteis em asteroides.
 
 O código está incompleto neste repositório, pois é apenas uma demonstração. Algumas funcionalidades e refatorações ainda estão por fazer, mas já é possível ver o funcionamento básico.
 
